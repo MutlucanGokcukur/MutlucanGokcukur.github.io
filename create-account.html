@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mutlu Real Estate | Create Account</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-bar bg-transparent">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="icon p-2 me-2">
+                        <img class="img-fluid" src="img/icon-deal.png" alt="Icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <h1 class="m-0 text-primary">Mutlu</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Property</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="property-list.html" class="dropdown-item">
+                                    <i class="fa fa-building icon"></i>
+                                    <span class="text">Property List</span>
+                                </a>
+                                <a href="property-type.html" class="dropdown-item">
+                                    <i class="fa fa-info-circle icon"></i>
+                                    <span class="text">Property Type</span>
+                                </a>
+                                <a href="property-agent.html" class="dropdown-item">
+                                    <i class="fa fa-users icon"></i>
+                                    <span class="text">Property Agents</span>
+                                </a>
+                                <a href="sales-summary.html" class="dropdown-item">
+                                    <i class="fa fa-signal icon"></i>
+                                    <span class="text">Property Summaries</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="404.html" class="dropdown-item">
+                                    <i class="fa fa-exclamation-circle icon"></i>
+                                    <span class="text">404 Error</span>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="favorites.html" class="nav-item nav-link">
+                            <i class="fa fa-star">Favorites</i>
+                        </a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="login.html" class="dropdown-item">
+                                    <i class="fa fa-key icon"></i>
+                                    <span class="text">Login</span>
+                                </a>
+                                <a href="create-account.html" class="dropdown-item active">
+                                    <i class="fa fa-user-plus icon" style="color:black;"></i>
+                                    <span class="text">Create Account</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0 mt-5">
+            <div class="row g-0 align-items-center flex-column flex-md-row">
+                <div class="col-md-6 p-5 mt-lg-2">
+                    <h5 class="title">Personel Information</h5>
+                    <div class="form-floating">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" id="name" type="text" placeholder="Name">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-floating">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5 mt-3" id="surname" type="text" placeholder="Surname">
+                        <label for="surname">Surname</label>
+                    </div>
+                    <h5 class="title mt-3">Birthday Information</h5>
+                    <select name="day" id="day" class="bg-transparent mt-3 p-2 w-100 form-control">
+                        <option value="" selected disabled>Date</option>
+                        <option value="01" >1</option>
+                        <option value="02" >2</option>
+                        <option value="03" >3</option>
+                        <option value="04" >4</option>
+                        <option value="05" >5</option>
+                        <option value="06" >6</option>
+                        <option value="07" >7</option>
+                        <option value="08" >8</option>
+                        <option value="09" >9</option>
+                        <option value="10" >10</option>
+                        <option value="11" >11</option>
+                        <option value="12" >12</option>
+                        <option value="13" >13</option>
+                        <option value="14" >14</option>
+                        <option value="15" >15</option>
+                        <option value="16" >16</option>
+                        <option value="17" >17</option>
+                        <option value="18" >18</option>
+                        <option value="19" >19</option>
+                        <option value="20" >20</option>
+                        <option value="21" >21</option>
+                        <option value="22" >22</option>
+                        <option value="23" >23</option>
+                        <option value="24" >24</option>
+                        <option value="25" >25</option>
+                        <option value="26" >26</option>
+                        <option value="27" >27</option>
+                        <option value="28" >28</option>
+                        <option value="29" >29</option>
+                        <option value="30" >30</option>
+                        <option value="31" >31</option>
+                    </select>
+                    <select name="month" id="month" class="bg-transparent mt-3 p-2 w-100 form-control">
+                        <option value="" selected disabled>Month</option>
+                        <option value="01">Ocak</option>
+                        <option value="02">Şubat</option>
+                        <option value="03">Mart</option>
+                        <option value="04">Nisan</option>
+                        <option value="05">Mayıs</option>
+                        <option value="06">Haziran</option>
+                        <option value="07">Temmuz</option>
+                        <option value="08">Ağustos</option>
+                        <option value="09">Eylül</option>
+                        <option value="10">Ekim</option>
+                        <option value="11">Kasım</option>
+                        <option value="12">Aralık</option>
+                    </select>
+                    <select name="year" id="year" class="bg-transparent mt-3 p-2 w-100 form-control">
+                        <option value="" >Year</option>
+                        <option value="2023" >2023</option>
+                        <option value="2022" >2022</option>
+                        <option value="2021" >2021</option>
+                        <option value="2020" >2020</option>
+                        <option value="2019" >2019</option>
+                        <option value="2018" >2018</option>
+                        <option value="2017" >2017</option>
+                        <option value="2016" >2016</option>
+                        <option value="2015" >2015</option>
+                        <option value="2014" >2014</option>
+                        <option value="2013" >2013</option>
+                        <option value="2012" >2012</option>
+                        <option value="2011" >2011</option>
+                        <option value="2010" >2010</option>
+                        <option value="2009" >2009</option>
+                        <option value="2008" >2008</option>
+                        <option value="2007" >2007</option>
+                        <option value="2006" >2006</option>
+                        <option value="2005" >2005</option>
+                        <option value="2004" >2004</option>
+                        <option value="2003" >2003</option>
+                        <option value="2002" >2002</option>
+                        <option value="2001" >2001</option>
+                        <option value="2000" >2000</option>
+                        <option value="1999" >1999</option>
+                        <option value="1998" >1998</option>
+                        <option value="1997" >1997</option>
+                        <option value="1996" >1996</option>
+                        <option value="1995" >1995</option>
+                        <option value="1994" >1994</option>
+                        <option value="1993" >1993</option>
+                        <option value="1992" >1992</option>
+                        <option value="1991" >1991</option>
+                        <option value="1990" >1990</option>
+                        <option value="1989" >1989</option>
+                        <option value="1988" >1988</option>
+                        <option value="1987" >1987</option>
+                        <option value="1986" >1986</option>
+                        <option value="1985" >1985</option>
+                        <option value="1984" >1984</option>
+                        <option value="1983" >1983</option>
+                        <option value="1982" >1982</option>
+                        <option value="1981" >1981</option>
+                        <option value="1980" >1980</option>
+                        <option value="1979" >1979</option>
+                        <option value="1978" >1978</option>
+                        <option value="1977" >1977</option>
+                        <option value="1976" >1976</option>
+                        <option value="1975" >1975</option>
+                        <option value="1974" >1974</option>
+                        <option value="1973" >1973</option>
+                        <option value="1972" >1972</option>
+                        <option value="1971" >1971</option>
+                        <option value="1970" >1970</option>
+                        <option value="1969" >1969</option>
+                        <option value="1968" >1968</option>
+                        <option value="1967" >1967</option>
+                        <option value="1966" >1966</option>
+                        <option value="1965" >1965</option>
+                        <option value="1964" >1964</option>
+                        <option value="1963" >1963</option>
+                        <option value="1962" >1962</option>
+                        <option value="1961" >1961</option>
+                        <option value="1960" >1960</option>
+                        <option value="1959" >1959</option>
+                        <option value="1958" >1958</option>
+                        <option value="1957" >1957</option>
+                        <option value="1956" >1956</option>
+                        <option value="1955" >1955</option>
+                        <option value="1954" >1954</option>
+                        <option value="1953" >1953</option>
+                        <option value="1952" >1952</option>
+                        <option value="1951" >1951</option>
+                        <option value="1950" >1950</option>
+                        <option value="1949" >1949</option>
+                        <option value="1948" >1948</option>
+                        <option value="1947" >1947</option>
+                        <option value="1946" >1946</option>
+                        <option value="1945" >1945</option>
+                        <option value="1944" >1944</option>
+                        <option value="1943" >1943</option>
+                        <option value="1942" >1942</option>
+                        <option value="1941" >1941</option>
+                        <option value="1940" >1940</option>
+                        <option value="1939" >1939</option>
+                        <option value="1938" >1938</option>
+                        <option value="1937" >1937</option>
+                        <option value="1936" >1936</option>
+                        <option value="1935" >1935</option>
+                        <option value="1934" >1934</option>
+                        <option value="1933" >1933</option>
+                        <option value="1932" >1932</option>
+                        <option value="1931" >1931</option>
+                        <option value="1930" >1930</option>
+                        <option value="1929" >1929</option>
+                        <option value="1928" >1928</option>
+                        <option value="1927" >1927</option>
+                        <option value="1926" >1926</option>
+                        <option value="1925" >1925</option>
+                        <option value="1924" >1924</option>
+                        <option value="1923" >1923</option>
+                    </select>
+                    <h5 class="title mt-3">Address Information</h5>
+                    <select class="bg-transparent mt-3 p-2 w-100 form-control">
+                        <option selected disabled>Location</option>
+                        <option value="1">Adana</option>
+                        <option value="2">Adıyaman</option>
+                        <option value="3">Afyonkarahisar</option>
+                        <option value="4">Ağrı</option>
+                        <option value="5">Amasya</option>
+                        <option value="6">Ankara</option>
+                        <option value="7">Antalya</option>
+                        <option value="8">Artvin</option>
+                        <option value="9">Aydın</option>
+                        <option value="10">Balıkesir</option>
+                        <option value="11">Bilecik</option>
+                        <option value="12">Bingöl</option>
+                        <option value="13">Bitlis</option>
+                        <option value="14">Bolu</option>
+                        <option value="15">Burdur</option>
+                        <option value="16">Bursa</option>
+                        <option value="17">Çanakkale</option>
+                        <option value="18">Çankırı</option>
+                        <option value="19">Çorum</option>
+                        <option value="20">Denizli</option>
+                        <option value="21">Diyarbakır</option>
+                        <option value="22">Edirne</option>
+                        <option value="23">Elazığ</option>
+                        <option value="24">Erzincan</option>
+                        <option value="25">Erzurum</option>
+                        <option value="26">Eskişehir</option>
+                        <option value="27">Gaziantep</option>
+                        <option value="28">Giresun</option>
+                        <option value="29">Gümüşhane</option>
+                        <option value="30">Hakkâri</option>
+                        <option value="31">Hatay</option>
+                        <option value="32">Isparta</option>
+                        <option value="33">Mersin</option>
+                        <option value="34">İstanbul</option>
+                        <option value="35">İzmir</option>
+                        <option value="36">Kars</option>
+                        <option value="37">Kastamonu</option>
+                        <option value="38">Kayseri</option>
+                        <option value="39">Kırklareli</option>
+                        <option value="40">Kırşehir</option>
+                        <option value="41">Kocaeli</option>
+                        <option value="42">Konya</option>
+                        <option value="43">Kütahya</option>
+                        <option value="44">Malatya</option>
+                        <option value="45">Manisa</option>
+                        <option value="46">Kahramanmaraş</option>
+                        <option value="47">Mardin</option>
+                        <option value="48">Muğla</option>
+                        <option value="49">Muş</option>
+                        <option value="50">Nevşehir</option>
+                        <option value="51">Niğde</option>
+                        <option value="52">Ordu</option>
+                        <option value="53">Rize</option>
+                        <option value="54">Sakarya</option>
+                        <option value="55">Samsun</option>
+                        <option value="56">Siirt</option>
+                        <option value="57">Sinop</option>
+                        <option value="58">Sivas</option>
+                        <option value="59">Tekirdağ</option>
+                        <option value="60">Tokat</option>
+                        <option value="61">Trabzon</option>
+                        <option value="62">Tunceli</option>
+                        <option value="63">Şanlıurfa</option>
+                        <option value="64">Uşak</option>
+                        <option value="65">Van</option>
+                        <option value="66">Yozgat</option>
+                        <option value="67">Zonguldak</option>
+                        <option value="68">Aksaray</option>
+                        <option value="69">Bayburt</option>
+                        <option value="70">Karaman</option>
+                        <option value="71">Kırıkkale</option>
+                        <option value="72">Batman</option>
+                        <option value="73">Şırnak</option>
+                        <option value="74">Bartın</option>
+                        <option value="75">Ardahan</option>
+                        <option value="76">Iğdır</option>
+                        <option value="77">Yalova</option>
+                        <option value="78">Karabük</option>
+                        <option value="79">Kilis</option>
+                        <option value="80">Osmaniye</option>
+                        <option value="81">Düzce</option>
+                    </select>
+                    <select class="bg-transparent mt-3 p-2 w-100 form-control">
+                        <option value="" selected disabled>Select District</option>
+                        <option value="adalar">Adalar</option>
+                        <option value="arnavutkoy">Arnavutköy</option>
+                        <option value="atasehir">Ataşehir</option>
+                        <option value="avcilar">Avcılar</option>
+                        <option value="bagcilar">Bağcılar</option>
+                        <option value="bahcelievler">Bahçelievler</option>
+                        <option value="bakirkoy">Bakırköy</option>
+                        <option value="basaksehir">Başakşehir</option>
+                        <option value="bayrampasa">Bayrampaşa</option>
+                        <option value="besiktas">Beşiktaş</option>
+                        <option value="beykoz">Beykoz</option>
+                        <option value="beylikduzu">Beylikdüzü</option>
+                        <option value="beyoglu">Beyoğlu</option>
+                        <option value="bueyuekcekmece">Büyükçekmece</option>
+                        <option value="catalca">Çatalca</option>
+                        <option value="cekmekoy">Çekmeköy</option>
+                        <option value="esenler">Esenler</option>
+                        <option value="esenyurt">Esenyurt</option>
+                        <option value="eyupsultan">Eyüpsultan</option>
+                        <option value="fatih">Fatih</option>
+                        <option value="gaziosmanpasa">Gaziosmanpaşa</option>
+                        <option value="gungoren">Güngören</option>
+                        <option value="kadikoy">Kadıköy</option>
+                        <option value="kagithane">Kağıthane</option>
+                        <option value="kartal">Kartal</option>
+                        <option value="kucukcekmece">Küçükçekmece</option>
+                        <option value="maltepe">Maltepe</option>
+                        <option value="pendik">Pendik</option>
+                        <option value="sancaktepe">Sancaktepe</option>
+                        <option value="sariyer">Sarıyer</option>
+                        <option value="silivri">Silivri</option>
+                        <option value="sultanbeyli">Sultanbeyli</option>
+                        <option value="sultangazi">Sultangazi</option>
+                        <option value="tuzla">Tuzla</option>
+                        <option value="umraniye">Ümraniye</option>
+                        <option value="uskudar">Üsküdar</option>
+                    </select>
+                    <div class="form-floating">
+                        <textarea id="address" class="form-control bg-transparent w-100 py-3 ps-4 pe-5 mt-3" placeholder="Full Address" cols="1"></textarea>
+                        <label for="address">Full Address</label>
+                    </div>
+                    <!-- mt-lg-1 -->
+                </div>
+                <div class="col-md-6 p-5 mt-4">
+                    <h5 class="title">Contact Information</h5>
+                    <div class="form-floating">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" id="email" type="email" placeholder="Email Address">
+                        <label for="name">Email Address</label>
+                    </div>
+                    <div class="form-floating">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5 mt-3" id="phoneNumber" type="text" placeholder="Phone Number">
+                        <label for="phoneNumber">Phone Number</label>
+                    </div>
+                    <div class="form-floating">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5 mt-3" id="password" type="password" placeholder="Password">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="form-floating">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5 mt-3" id="passwordAgain" type="password" placeholder="Password Again">
+                        <label for="passwordAgain">Password Again</label>
+                    </div>
+                    <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" id="informativeEmails">
+                        <label class="form-check-label" for="informativeEmails">
+                            I hereby consent to receiving informative emails from your organization.
+                        </label>
+                    </div>
+                    <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" id="informativeSms">
+                        <label class="form-check-label" for="informativeSms">
+                            I hereby consent to receiving informative SMS messages from your organization.
+                        </label>
+                    </div>
+                    <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" id="termsAndConditions">
+                        <label class="form-check-label" for="termsAndConditions">
+                            I have read and agree to the terms and conditions of the membership agreement.
+                        </label>
+                    </div>
+                    <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" id="kvkk">
+                        <label class="form-check-label" for="kvkk">
+                            I have read and agree to the terms of the Personal Data Protection Law (KVKK) agreement.
+                        </label>
+                    </div>    
+                    <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn mt-3">Create Account</a>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Clients Say!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>I couldn't be happier with the service I received. The team at Perfect Property made the process of finding my dream home incredibly smooth. They truly listened to my needs and found a property that exceeded my expectations. I highly recommend their services.</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Sarah M.</h6>
+                                    <small>Real Estate Developer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>I couldn't be happier with Perfect Property. Their team made finding my dream home incredibly smooth. They listened to my needs and found a property that exceeded my expectations. Highly recommended!
+                                <br>
+                                <br>
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">John D.</h6>
+                                    <small>Software Engineer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>I'm impressed by the level of commitment Perfect Property has towards their clients. The team's knowledge of the real estate market is exceptional, and their guidance throughout the buying process was invaluable. I'm now a proud homeowner, thanks to them!</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Emily W.</h6>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>Perfect Property provided outstanding service. They understood my requirements and found a home that exceeded my expectations. I'm thrilled with their expertise and highly recommend their services to anyone searching for their dream home.
+                                <br>
+                                <br>
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Ethan M.</h6>
+                                    <small>University Student</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p class="mb-2">
+                            <span><a style="text-decoration: none;color: inherit;" href="https://www.google.com/maps/place/Kocaeli+%C3%9Cniversitesi/@40.8221772,29.9190768,17z/data=!3m1!4b1!4m6!3m5!1s0x14cb5badf629fe45:0xc81fa849234e8755!8m2!3d40.8221732!4d29.9216517!16s%2Fm%2F026l203?entry=ttu" class="link-style" target="_blank"><i class="fa fa-map-marker-alt me-3"></i>Kocaeli University Umuttepe Campus 41001, Izmit/KOCAELI</a></span>
+                        </p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(0262) 303 10 00-33</p>
+                        <p class="mb-2">
+                            <span><a style="text-decoration: none;color: inherit;" href="mailto:kocaeliuniversitesi@hs01.kep.tr?subject=Konu&body=Mesajınız buraya yazın" class="link-style" target="_blank"><i class="fa fa-envelope me-3"></i>kocaeliuniversitesi@hs01.kep.tr</a></span>
+                        </p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" target="_blank" href="https://twitter.com/kou92official"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.facebook.com/kou92official"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.youtube.com/@kou92official"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.linkedin.com/school/kocaeli-university/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                        <a class="btn btn-link text-white-50" href="sales-summary.html">Sales Summary</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Photo Gallery</h5>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-1.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-2.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-3.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-4.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-5.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-6.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-7.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-8.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-9.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Don't miss out on opportunities and stay updated! Subscribe to our newsletter to receive the latest news and exclusive offers.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5 text-white" type="email" placeholder="Email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Mutlu Real Estate</a>, All Right Reserved. 
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="index.html">Home</a>
+                                <a href="https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        var mapIcon = document.getElementById("map-icon");
+
+        mapIcon.onclick = function() {
+        window.open("https://www.google.com/maps/place/Kocaeli+%C3%9Cniversitesi/@40.8221772,29.9190768,17z/data=!3m1!4b1!4m6!3m5!1s0x14cb5badf629fe45:0xc81fa849234e8755!8m2!3d40.8221732!4d29.9216517!16s%2Fm%2F026l203?entry=ttu");
+    };
+    </script>
+</body>
+
+</html>
